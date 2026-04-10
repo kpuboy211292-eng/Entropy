@@ -1,0 +1,39 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 \uc0\u55357 \u56960  Entropy Installation and Launch Instructions (macOS)\
+Since the program is an open-source utility and is distributed without a paid Apple enterprise certificate, macOS's built-in protection (Gatekeeper) will block its first launch, marking it as "downloaded from the internet." This is Apple's standard procedure for all independent programs.\
+\uc0\u9888 \u65039  IMPORTANT FIRST STEP: Unzip the downloaded archive and be sure to move the Entropy.app file to your system's Applications folder. Do not launch the program directly from the Downloads folder, otherwise macOS will restrict its operation!\
+Once the program is in your Applications folder, choose ONE of the three methods below to launch it:\
+\
+Method 1: Right-click (Easiest)\
+Works on most versions of macOS.\
+1. Open the Applications folder.\
+2. Do not double-click the application.\
+3. Right-click Entropy.app (or two-finger click on the touchpad).\
+4. In the menu that appears, select "Open."\
+5. A warning window will appear warning that the developer is not identified. However, this window will also include an "Open" button (which isn't available with a regular double-click). Click it.\
+\
+Method 2. Via "System Preferences"\
+Use this if Method 1 didn't work or the system prompts you to "Move to Trash."\
+1. Double-click Entropy.app. The system will display a blocking error.\
+2. Click "OK" or "Cancel" in the error message.\
+3. In the upper-left corner of the screen, click the \uc0\u63743  (Apple) \u10132  System Preferences.\
+4. Go to Privacy & Security.\
+5. Scroll down to the "Security" section.\
+6. It will say: "The program 'Entropy' was blocked from launching..." Click the "Confirm Login" button next to it (or "Open Anyway").\
+7. Enter your Mac's password (or place your finger on Touch ID) and click "Open."\
+\
+Method 3. Via Terminal (100% guaranteed to launch)\
+In recent versions of macOS (Sonoma, Sequoia), Apple has become very aggressive and sometimes completely hides the buttons from Method 1 and Method 2. In this case, use the system command to unlock the app.\
+1. Make sure Entropy.app is in the Applications folder.\
+2. Open the standard Terminal application (via Launchpad, or press Cmd + Space and type "Terminal").\
+3. Copy the following command in its entirety and paste it into the Terminal window: xattr -cr /Applications/Entropy.app\
+4. Press Enter. (The system will not respond; a new blank line will appear\'97this means the command was successful.)\
+5. Close Terminal. Entropy.app can now be launched with a simple double-click!\
+\
+\uc0\u55356 \u57252  Granting permissions at startup: Upon successful startup, macOS will display system windows asking for permission to access the Microphone, Location Services (needed for Wi-Fi radar), and Screen Recording (for pixel hashing). Be sure to allow these permissions, otherwise hardware entropy collection will not work.}
